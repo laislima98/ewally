@@ -1,0 +1,35 @@
+a:hover{
+  text-transform: none;
+  cursor: pointer!important;
+}
+
+button:hover{
+  text-transform: none;
+}
+
+.theme-button{
+  width:180px;
+  font-size:14px;
+  border-radius: 30px;
+  height: 40px;
+  border: none;
+  &.block{
+    width: 100%;
+  }
+  &.white{
+    background: #fff;
+    color: #1d1d1d;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+@media(max-width:768px){
+  .theme-button{
+    width: 100%;
+  }
+}
