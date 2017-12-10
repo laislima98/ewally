@@ -1,5 +1,18 @@
 // Include files this way \/
-$(document).ready( function(e) {
-  console.log("Aeho!!! Gulp is ready to go.");
-});
+//= include "_included_file.js"
+var menuButton = document.getElementById("toggle-menu");
+var i;
 
+function openMenu(){
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("show");
+  menuButton.classList.toggle("open");
+}
+
+menuButton.addEventListener("click", function(){
+  openMenu();
+})
+
+function subMenu(){
+
+}
